@@ -1,16 +1,19 @@
 import 'package:clean_architectue/core/routing/routes.dart';
+import 'package:clean_architectue/features/home/presentation/views/book_details_view.dart';
 import 'package:clean_architectue/features/home/presentation/views/home_view.dart';
 import 'package:clean_architectue/features/splach/pesentation/views/splach_view.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
-    final dynamic arguments = settings.arguments;
+    // final dynamic arguments = settings.arguments;
     switch (settings.name) {
       case Routes.splachScreen:
         return MaterialPageRoute(builder: (_) => const SplachView());
       case Routes.homeScreen:
         return MaterialPageRoute(builder: (_) => const HomeView());
+      case Routes.bookDetailsView:
+        return MaterialPageRoute(builder: (_) => const BookDetailsView());
       default:
         return MaterialPageRoute(
           builder: (_) =>

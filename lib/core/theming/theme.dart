@@ -8,7 +8,9 @@ class AppTheme {
     textTheme: ThemeData.light().textTheme,
   );
   static ThemeData get darkTheme => ThemeData(
+    brightness: Brightness.dark,
     scaffoldBackgroundColor: AppColors.backgroundColor,
+    appBarTheme: const AppBarTheme(),
     textTheme: ThemeData.dark().textTheme.apply(
       fontFamily: AppConstants.kMontserrat,
     ),

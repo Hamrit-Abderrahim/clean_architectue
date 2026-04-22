@@ -1,4 +1,4 @@
-import 'package:clean_architectue/features/home/presentation/views/widgets/best_seller_list_view_item.dart';
+import 'package:clean_architectue/features/home/presentation/views/widgets/best_seller_list_view.dart';
 import 'package:clean_architectue/features/home/presentation/views/widgets/best_seller_title.dart';
 import 'package:clean_architectue/features/home/presentation/views/widgets/custom_app_bar.dart';
 import 'package:clean_architectue/features/home/presentation/views/widgets/featured_books_list_view.dart';
@@ -23,33 +23,12 @@ class HomeViewBody extends StatelessWidget {
                 SizedBox(height: 40.h),
                 BestSellerTitle(),
                 SizedBox(height: 20.h),
-                // BestSellerListView(),
               ],
             ),
           ),
         ),
         SliverFillRemaining(child: BestSellerListView()),
       ],
-    );
-  }
-}
-
-class BestSellerListView extends StatelessWidget {
-  const BestSellerListView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(
-      padding: EdgeInsets.zero,
-      physics: NeverScrollableScrollPhysics(),
-      //shrinkWrap: true,
-      itemCount: 10,
-      itemBuilder: (context, index) {
-        return Padding(
-          padding: EdgeInsets.symmetric(vertical: 10.h),
-          child: BestSellerListViewItem(),
-        );
-      },
     );
   }
 }

@@ -2,9 +2,9 @@ import 'package:clean_architectue/core/theming/images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class FeaturedListHomeViewItem extends StatelessWidget {
-  const FeaturedListHomeViewItem({super.key});
-
+class CustomBookImage extends StatelessWidget {
+  const CustomBookImage({super.key, this.borderRadius});
+  final double? borderRadius;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -15,7 +15,7 @@ class FeaturedListHomeViewItem extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.red,
 
-            borderRadius: BorderRadius.circular(16.r),
+            borderRadius: BorderRadius.circular(borderRadius ?? 16).r,
             image: DecorationImage(
               fit: BoxFit.fill,
               image: AssetImage(AppImages.testImage),
