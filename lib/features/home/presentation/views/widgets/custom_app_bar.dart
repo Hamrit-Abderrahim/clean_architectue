@@ -1,3 +1,4 @@
+import 'package:clean_architectue/core/routing/routes.dart';
 import 'package:clean_architectue/core/theming/colos.dart';
 import 'package:clean_architectue/core/theming/images.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,10 @@ class CustomAppBar extends StatelessWidget {
           Image.asset(AppImages.logo, height: 18.h),
           const Spacer(),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, Routes.searchView);
+              // context.push(Routes.searchView);
+            },
             icon: FaIcon(
               FontAwesomeIcons.magnifyingGlass,
               size: 24.r,

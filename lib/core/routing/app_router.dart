@@ -1,6 +1,7 @@
 import 'package:clean_architectue/core/routing/routes.dart';
 import 'package:clean_architectue/features/home/presentation/views/book_details_view.dart';
 import 'package:clean_architectue/features/home/presentation/views/home_view.dart';
+import 'package:clean_architectue/features/search/presentation/views/search_view.dart';
 import 'package:clean_architectue/features/splach/pesentation/views/splach_view.dart';
 import 'package:flutter/material.dart';
 
@@ -14,6 +15,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const HomeView());
       case Routes.bookDetailsView:
         return MaterialPageRoute(builder: (_) => const BookDetailsView());
+      case Routes.searchView:
+        return MaterialPageRoute(builder: (_) => const SearchView());
       default:
         return MaterialPageRoute(
           builder: (_) =>
