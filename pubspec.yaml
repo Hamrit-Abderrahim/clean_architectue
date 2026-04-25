@@ -26,6 +26,9 @@ dependencies:
   go_router: ^17.2.1
   font_awesome_flutter: ^11.0.0
   flutter_screenutil: ^5.9.3
+  dartz: ^0.10.1
+  json_annotation: ^4.11.0
+  logger: ^2.6.0  
   #google_fonts: ^8.0.2
   
 dev_dependencies:
@@ -33,6 +36,7 @@ dev_dependencies:
     sdk: flutter
   build_runner: ^2.13.1
   json_serializable: ^6.13.1
+  retrofit_generator: ^10.0.1
 
   flutter_lints: ^6.0.0
 
