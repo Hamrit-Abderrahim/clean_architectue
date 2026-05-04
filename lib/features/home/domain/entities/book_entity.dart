@@ -1,9 +1,10 @@
 class BookEntity {
+  final String bookId;
   final String title;
-  final String author;
-  final String coverImageUrl;
-  final double price;
-  final double rating;
+  final String? author;
+  final String? coverImageUrl;
+  final num? price;
+  final num? rating;
 
   BookEntity({
     required this.title,
@@ -11,5 +12,6 @@ class BookEntity {
     required this.coverImageUrl,
     required this.price,
     required this.rating,
+    required this.bookId,
   });
 }
